@@ -1,0 +1,12 @@
+{application, cowpy, [
+  {description, "cowboy + zeromq + wsgi."},
+  {vsn, "0.1"},
+  {modules, []},
+  {registered, [cowpy_sup]},
+  {applications, [
+    kernel, stdlib,
+    cowboy, erlzmq
+  ]},
+  {mod, {cowpy, []}},
+  {env, []}
+]}.
